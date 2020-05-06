@@ -15,11 +15,11 @@ class Transaction {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @Column('varchar')
+  @Column()
   title: string;
 
-  @Column({ type: 'enum', enum: ['income', 'outcome'] })
-  type: string;
+  @Column()
+  type: 'income' | 'outcome';
 
   @Column('decimal')
   value: number;
