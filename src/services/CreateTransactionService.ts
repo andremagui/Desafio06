@@ -8,7 +8,7 @@ import AppError from '../errors/AppError';
 interface RequestDTO {
   title: string;
 
-  type: string;
+  type: 'income' | 'outcome';
 
   value: number;
 
